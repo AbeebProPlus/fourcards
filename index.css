@@ -1,0 +1,156 @@
+body {
+  background-color:  hsl(0, 0%, 99%);
+}
+
+.top {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+
+.attribution1, .attribution2{
+  font-family: 'Poppins', sans-serif;
+  font-size:30px;
+}
+
+.attribution1{
+  color: hsl(0, 0%, 50%);
+  margin-bottom: 0; 
+}
+
+.attribution2{
+  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  color: hsl(0, 0%, 60%);
+  font-size: 0.8rem;
+}
+.middle{
+  width: 70%;
+  margin: 30px auto auto auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+}
+.supervisor, .team-builder, .karma, .calculator {
+  border-top-style: solid;
+  border-top-width: 5px;
+  /*width: 280px;*/
+  border-radius: 8px;
+  background-color: #fff;
+  padding-bottom: 30px;
+  box-shadow: 5px 10px 7px lightgrey ;
+
+}
+.supervisor {
+  border-top-color: hsl(180, 62%, 55%);
+ /* position: absolute;
+  left: 200px;
+  top: 150px;*/
+   grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.team-builder{
+ /* border-top-color: hsl(0, 78%, 62%);
+  position: absolute;
+  left: 500px;*/
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.karma{
+  border-top-color: hsl(34, 97%, 64%);
+ /* position: absolute;
+  left: 500px;
+  top: 250px;
+*/
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.calculator{
+  border-top-color: hsl(212, 86%, 64%); 
+  /*position: absolute;
+  right: 170px;
+  top: 150px;*/
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.move{
+  margin-left: 20px;
+}
+
+.img-move{
+  margin-top: 20px;
+  padding-left: 170px;
+}
+
+.footers{
+  width: 25%;
+  margin: auto;
+  position: relative;
+  top: 80px;
+}
+
+@media (max-width: 375px){
+  .top {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  .attribution1, .attribution2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  p {
+    font-size: 0.7rem;
+    width: 90%;
+    margin: auto;
+  }
+
+  .supervisor, .team-builder, .karma, .calculator   {
+    width: 260px;
+    position: absolute;
+    left: 60px;
+  }
+  .supervisor{
+    top: 180px;
+  }
+  .team-builder{
+    top: 430px;
+  }
+  .karma{
+    top: 690px;
+  } 
+  .calculator{ 
+    top: 940px;
+  }
+  .par {
+    color: hsl(0, 0%, 60%);
+    font-size: 0.7rem;
+    text-align: center;
+    width: 60%;
+  }
+  .img-move{
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .footers{
+    width: 100%;
+    margin: auto;
+    position: relative;
+    top: 1050px;
+    font: 0.3rem;
+    text-align: center;
+  }
+}
